@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Array</title>
+  </head>
+  <body>
+    <h1 align="center">
+      JavaScript Questions
+      <br />
+      Array
+    </h1>
+    <div class="box">
+      <h2>1. Find the Product.</h2>
+      <pre>
+    const Find_Prod = (array, N) => {
+    var product=1;
+      for(let i=0; i< N ; i++){
+        product= product * array[i];
+      }
+    return product;
+    };</pre
+      >
+    </div>
+    <div class="box">
+      <h2>2. Find the Sum.</h2>
+      <pre>
+    const Find_Sum = (array, N) => {
+      var sum=0;
+      for( var i=0; i< N ; i++){
+        sum= sum + array[i];
+      }
+      return sum;
+    };</pre
+      >
+    </div>
+    <div class="box">
+      <h2>3. Count Occurrences.</h2>
+      <pre>
+    const findCount = (N, K, Arr) => {
+        var count=0;
+        for( var i=0; i< N; i++){
+          if( Arr[i] === K){
+            count ++;
+          }
+        }
+      return count;
+    };</pre
+      >
+    </div>
+    <div class="box">
+      <h2>4. Even Odd.</h2>
+      <pre>
+    const findEvenOdd = (N, Arr) => {
+        var B=[0,0];
+        for( var i=0; i< N; i++){
+          if(Arr[i]%2===0){
+            B[0]=B[0]+Arr[i];
+          }
+          else{
+            B[1]=B[1]+Arr[i];
+          }
+        }
+        return B;
+    };</pre
+      >
+    </div>
+    <div class="box">
+      <h2>5. Find whether the number is present or not.</h2>
+      <pre>
+    const Find_Num = (array,N,M) => { 
+      var s="";
+      for(var i=0; i< N; i++){
+        if(array[i]===M){
+          s="YES";
+          break;
+        }
+        else{
+          s="NO";
+        }
+      }
+      return s;
+    };</pre
+      >
+    </div>
+    <div class="box">
+      <h2>6. Higher Age.</h2>
+      <pre>
+    const highAge = (N, Arr) => {   
+        var b=[];
+        for( var i=0; i<N; i++){
+          if(Arr[i]>=18){
+            b.push(Arr[i]);
+          }
+        }
+        return b;
+    }; </pre
+      >
+    </div>
+    <div class="box">
+      <h2>7. Increment the Array Elements.</h2>
+      <pre>
+    const Inc_Arr = (array,N) => {   
+      s="";
+      for( var i=0; i < N ; i++){
+        array[i]=array[i]+1;
+        s=s+" "+array[i];
+      }
+      console.log(s);
+    }; </pre
+      >
+    </div>
+    <div class="box">
+      <h2>8. Pass or Fail.</h2>
+      <pre>
+    const isAllPass = (N, Arr) => {
+    var s=""
+    for( var i=0; i< N; i++){
+      if(Arr[i]< 32){
+        s="NO";
+        break;
+      }
+      else{
+        s="YES";
+      }
+    }
+    return s;
+    }; </pre
+      >
+    </div>
+    <div class="box">
+      <h2>9. Unique Color Shirt.</h2>
+    <pre>
+    function Unique_Shirts (arr,N) {
+    count=0
+    temp=0
+    for(let i=0 ; i<N;i++){
+      count=0
+      for(let j=0 ; N >j N ;j++){
+        if(arr[i] === arr[j]){
+          count+=1
+        }
+      }
+      if(count===1){
+        temp+=1
+      }
+    }
+    return temp
+    }</pre>
+    </div>
+    <div class="box">
+      <h2>10. Min and Max.</h2>
+    <pre>
+    function arrayMin(arr) {
+        var temp_1=arr[0];
+       for(var i=0;i< arr.length;i++){
+         if(temp_1>arr[i]){
+           temp_1=arr[i];
+         }
+         else{
+           temp_1=temp_1;
+         }
+       }
+       return temp_1;
+     }
+     
+     function arrayMax(arr) {
+      var temp_2=arr[0];
+       for(var j=0;j< arr.length;j++){
+         if(temp_2< arr[j]){
+           temp_2=arr[j];
+         }
+         else{
+           temp_2=temp_2;
+         }
+       }
+       return temp_2;
+     }</pre>
+    </div>
+    <div class="box">
+      <h2>11. Birthday Game.</h2>
+    <pre>
+    function Unique_Shirts (arr,N) {
+    count=0
+    temp=0
+    for(let i=0 ; i<N;i++){
+      count=0
+      for(let j=0 ; N >j N ;j++){
+        if(arr[i] === arr[j]){
+          count+=1
+        }
+      }
+      if(count===1){
+        temp+=1
+      }
+    }
+    return temp
+    }</pre>
+    </div>
+  </body>
+</html>
